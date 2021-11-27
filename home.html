@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Home</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    <form action="/" method="post" class="form-signin">
+      <img class="mb-4" src="image/logo.png" alt="" width="150" height="150">
+      <h1 class="h4 mb-3 font-weight-normal">Welcome to KU Safety Place</h1>
+      <select id="location" name="location" class="form-control" style="height: 50px; margin-bottom: 2%; text-align: center;">
+        <option value="0">เลือกสถานที่</option>
+        <option value="1">อาคารภาควิชาวิศวกรรม คอมพิวเตอร์</option>
+        <option value="2">อาคารชีววิทยา</option>
+        <option value="3">ภาควิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="4">ตึกฟิสิกส์</option>
+        <option value="5">ภาควิชาคณิตศาสตร์ มหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="7">ศูนย์อาหารคณะวิทยาศาสตร์</option>
+        <option value="8">ภาควิชาสัตววิทยา คณะวิทยาศาสตร์ ม.เกษตรศาสตร์</option>
+        <option value="9">พิพิธภัณฑ์ สัตววิทยา</option>
+
+        <option value="10">ภาควิชาเคมี มหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="11">พี่วินชุมชนโรงสูบ (หน้าศูนย์เรียนรวม1)</option>
+        <option value="12">Eurofins Food Testing(Thailand)Co.,Ltd.</option>
+        <option value="13">ภาควิชาจุลชีววิทยา คณะวิทยาศาสตร์ ม.เกษตรศาสตร์</option>
+        <option value="15">Copé Coffee & Begery Cafe</option>
+        <option value="16">อาคารเทพศาสตร์สถิตย์</option>
+        <option value="17">สถานพยาบาลมหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="18">อาคารปฎิบัติการ วิศวกรรมไฟฟ้า</option>
+        <option value="19">IUP</option>
+
+        <option value="20">ภาควิชาวิศวกรรม เครื่องกล</option>
+        <option value="21">อาคารปฎิบัติการ วิศวกรรมอุตสาหการ</option>
+        <option value="22">ภาควิชาวิศวกรรมทรัพยากรน้ำ มหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="23">ภาควิชาวิศวกรรมเคมี คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="24">ภาควิชาวิศวกรรมสิ่งแวดล้อม มหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="25">อาคารภาควิชาคหกรรมศาสตร์</option>
+        <option value="26">สำนักส่งเสริมและฝึกอบรม มหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="27">7-Eleven</option>
+        <option value="28">ศูนย์หนังสือมหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="29">สำนักงานทรัพย์สิน มหาวิทยาลัยเกษตรศาสตร์</option>
+
+        <option value="30">ธนาคารกรุงศรีอยุธยา สาขามหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="31">ร้านแก้วเกษตร</option>
+        <option value="32">มูลนิธิข้าวไทย ในพระบรมราชูปถัมภ์</option>
+        <option value="33">กองเกษตรเคมี</option>
+        <option value="34">ศีนี มังสะวิรัติ</option>
+        <option value="35">อาคารวิทยบริการ มหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="36">คณะบริหารธุรกิจ มหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="37">U-Store มหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="38">Kerry Express สาขา ม.เกษตรศาสตร์</option>
+        <option value="39">ต้องใจไก่ย่าง</option>
+        <option value="40">ธนาคารกรุงไทย</option>
+
+        <option value="41">เนลแอทฮาร์ท</option>
+        <option value="42">ธนาคารกรุงเทพ</option>
+        <option value="43">Flash Express สาขามหาวิทยาลัยเกษตรศาสตร์ บางเขน</option>
+        <option value="44">Ngam Wong Wan Parking, KU</option>
+        <option value="45">ร้านขายยาสหมิตรฟาร์มาซี</option>
+        <option value="46">ทีเอ็มบีธนชาต สาขามหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="47">Art of Coffee @ Kasetsart University</option>
+        <option value="48">Dairy Queen</option>
+        <option value="49">ธนาคารไทยพาณิชย์ สาขามหาวิทยาลัยเกษตรศาสตร์ (บางเขน)</option>
+        <option value="50">ศูนย์พรหมวชิรญาณ คลินิกการแพทย์แผนไทย-จีน สาขามหาวิทยาลัยเกษตรศาสตร์</option>
+
+        <option value="51">พี่วินประตูงามวงศ์วาน 1</option>
+        <option value="52">อาคารวิศวกรรม 60 ปี มหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="53">อาคารปฏิบัติการวิศวกรรมสำรวจ</option>
+        <option value="54">อาคารปฏิบัติการคณะเศรษฐศาสตร์</option>
+        <option value="55">คณะเศรษฐศาสตร์ มหาวิทยาลัยเกษตรศาสตร์</option>
+        <option value="56">โรงอาหารคณะบริหารธุรกิจ</option>
+        <option value="57">Happy Place Center</option>
+        <option value="58">True LAB</option>
+        <option value="59">True Coffee</option>
+        <option value="60">KU Home Hotel</option>
+        <option value="61">สนามอินทรีจันทรสถิตย์</option>
+
+      </select>
+      <select id="topic" name="topic" class="form-control" style="height: 50px; margin-bottom: 5%; text-align: center;">
+        <option value="topic">เลือกหัวข้อ</option>
+        <option value="PM">ค่าปริมาณฝุ่นละออง PM2.5</option>
+        <option value="Light">ค่าความสว่าง</option>
+        <option value="Security">พนักงานรักษาความปลอดภัยในบริเวณใกล้เคียง</option>
+      </select>
+      <button class="btn btn-lg btn-primary btn-block" type="submit"">Enter</button>
+      <p class="mt-5 mb-3 text-muted">&copy; developed by IngMarkJom SKE17</p>
+    </form>
+  </body>
+</html>
