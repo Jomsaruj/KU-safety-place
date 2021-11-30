@@ -30,7 +30,7 @@ app.post("/", function(req,res){
                         res.render('result', {location: building, time: "28 พฤษจิกายน 2564", amount: pm1, seven: pm2, six: pm3})
                     }
                     else{
-                        // do something in case no data
+                        res.render('no_data')
                     }
                 })
             })
@@ -52,7 +52,7 @@ app.post("/", function(req,res){
                         res.render('result_light', {location: building, time: time, current: current_light, one: minus_one, two: minus_two, three: minus_three, four: minus_four, five: minus_five})
                     }
                     else{
-                        // do something in case no data
+                        res.render('no_data')
                     }
                 })
             })
@@ -68,7 +68,7 @@ app.post("/", function(req,res){
                         res.render('result_security', {location: building, current: 1, one: 1, two: 1, three: 1, four: 1, five: 1, number: number, object: securityData})
                     }
                     else{
-                        // do something in case no data
+                        res.render('no_data')
                     }
                 })
             })
