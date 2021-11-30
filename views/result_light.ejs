@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Result</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/pricing/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="result.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  </head>
+  <body>
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4" style="margin-top: 3%; font-weight: lighter;">ค่าเฉลี่ยความสว่าง</h1>
+      <h3 style="margin-top: 2%;"><%= location %></h3>
+    </div>
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h5 class="my-0 font-weight-normal" style="font-weight: lighter;">ค่าเฉลี่ย ณ เวลาล่าสุด <%= time %> </h5>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title" style="font-weight: lighter;"><%= current %>%</h1>
+            <% if (parseFloat(current) >= 70){ %>
+              <img src="image/bright.png" width="450" height="150" style="margin-bottom: 2%; margin-top: 1%" >
+              <h4 style="font-weight: lighter; margin-top: 1%;">สว่างมาก สามารถเดินทางได้เป็นปกติ</h4>
+            <% } else if (parseFloat(current) < 70 && parseFloat(current) > 40){ %>
+              <img src="image/moderate.png" width="380" height="150" style="margin-bottom: 2%; margin-top: 1%">
+              <h4 style="font-weight: lighter; margin-top: 1%;">สว่างปานกลาง ควรเดินทางด้วยความระมัดระวัง</h4>
+            <% } else { %>
+              <img src="image/dim.png" width="160" height="150" style="margin-bottom: 2%; margin-top: 1%" >
+              <h4 style="font-weight: lighter; margin-top: 1%;">สว่างน้อย ควรหลีกเลี่ยง</h4>
+            <% }%>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h5 class="my-0 font-weight-normal">กราฟแสดงค่าความสว่างย้อนหลัง 6 ชั่วโมง</h5>
+            </div>
+            <div class="card-body">
+              <canvas id="myChart" width="500" height="500" style="margin: 0 auto;">a</canvas>
+              <p hidden id="cur" style="visibility: hidden;"><%= current %></p>
+              <p hidden id="one" style="visibility: hidden;"><%= one %></p>
+              <p hidden id="two" style="visibility: hidden;"><%= two %></p>
+              <p hidden id="three" style="visibility: hidden;"><%= three %></p>
+              <p hidden id="four" style="visibility: hidden;"><%= four %></p>
+              <p hidden id="five" style="visibility: hidden;"><%= five %></p>
+              <script>
+
+                let l_five = document.getElementById('five').innerHTML;
+                let l_four = document.getElementById('four').innerHTML;
+                let l_three = document.getElementById('three').innerHTML;
+                let l_two = document.getElementById('two').innerHTML;
+                let l_one = document.getElementById('one').innerHTML;
+                let current_l = document.getElementById('cur').innerHTML;
+
+                let myChart = document.getElementById('myChart').getContext('2d'); 
+
+                let massPopChart = new Chart(myChart, { type: 'line', data:{ labels:["5 ชั่วโมงที่แล้ว", "4 ชั่วโมงที่แล้ว", "3 ชั่วโมงที่แล้ว", "2 ชั่วโมงที่แล้ว", "1 ชั่วโมงที่แล้ว", "ล่าสุด"], datasets:[{ label:'ค่าเฉลี่ยความสว่าง', data:[parseFloat(l_five),parseFloat(l_four),parseFloat(l_three),parseFloat(l_two),parseFloat(l_one) ,parseFloat(current_l)]}],}
+                ,options: {
+                  responsive: false
+                  }
+                })
+              </script>
+            </div>
+          </div>
+        </div>
+        </div>
+    <form action="/" method="get">
+    <button type="submit" class="btn btn-danger" style="width: 50%; margin-left: 25%; margin-bottom: 5%">กลับหน้าหลัก</button>
+    </form>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+  </body>
+</html>
