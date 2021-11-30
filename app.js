@@ -58,7 +58,20 @@ app.post("/", function(req,res){
             })
         }
         else if (topic == "Security"){
-            url = "http://localhost:8080/rain-api/v1/PMLocation/"+ location_id;
+            url = "https://kuplace.herokuapp.com/ku-place/securitylocation/"+ location_id;
+            https.get(url, function(response){
+                response.on("data", function(data){
+                    const securityData = JSON.parse(data)
+                    if (securityData.length > 0){
+                        const number = securityData.length
+                        const building = securityData[0].building
+                        res.render('result_security', {location: building, current: 1, one: 1, two: 1, three: 1, four: 1, five: 1, number: number, object: securityData})
+                    }
+                    else{
+                        // do something in case no data
+                    }
+                })
+            })
         }
     }
     else{
