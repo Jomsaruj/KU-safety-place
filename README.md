@@ -1,2 +1,2 @@
 # KU-safety-place
-DAQ term project
+https://cryptic-plains-93811.herokuapp.com
