@@ -20,26 +20,28 @@
   </head>
   <body>
 
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4" style="margin-top: 3%; font-weight: lighter;">พนักงานรักษาความปลอดภัยในบริเวณใกล้เคียง</h1>
-      <h3 style="margin-top: 2%;"><%= location %></h3>
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" style="background-color: rgba(41, 182, 109, 0.8); margin-bottom: 2%;">
+      <h1 class="display-4" style="margin-top: 1%; font-weight: bold; color: white;">พนักงานรักษาความปลอดภัยในบริเวณใกล้เคียง</h1>
+      
+      <h3 style="margin-top: 2%;color: white; font-weight: lighter;"><%= location %></h3>
     </div>
     <div class="container">
       <div class="card-deck mb-3 text-center">
         <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h5 class="my-0 font-weight-normal" style="font-weight: lighter;">จำนวนพนักงานรักษาความปลอดภัยในบริเวณใกล้เคียง <%= number %> </h5>
+          <div class="card-header" style="background-color: #064635;">
+            <h4 style="font-weight: lighter;color: white; margin-top: 1%;">จำนวนพนักงานรักษาความปลอดภัยในบริเวณใกล้เคียงทั้งหมดรวม <%= number %> ป้อม</h4>
           </div>
           <% for (let i = 0; i < parseInt(number); i++) {  %>
-            <div class="card-body">
+            <div class="card-body" style="background-color: rgba(183, 246, 204, 0.25);">
 
               <p hidden id = "distance_value"><%= object[i].distance %></p>
               <p hidden id = "id_value"><%= object[i].security_id %></p>
               <p hidden id = "link_value"><%= object[i].img_link %></p>
 
-              <h4 id = "post_distance" class="card-title pricing-card-title" style="font-weight: lighter;">ระยะห่าง <%= object[i].distance %> เมตร</h4>
-              <img id = "image" src=<%= object[i].img_link %> width="400" height="300" style="margin-bottom: 2%; margin-top: 1%" >
-              <h5 id = "post_distance" class="card-title pricing-card-title" style="font-weight: lighter; margin-bottom: 5%;">พนักงานรักษาความปลอดภัยหมายเลข <%= object[i].security_id %></h5>
+              <img id = "image" src=<%= object[i].img_link %> width="360" height="260" style="margin-bottom: 2%; margin-top: 1%" >
+              <h5 id = "post_distance" class="card-title pricing-card-title" style="font-weight: lighter;">พนักงานรักษาความปลอดภัยป้อมหมายเลข <%= object[i].security_id %></h5>
+              <span class="badge" style="background-color: rgba(255, 64, 26, 0.43); color: white;"><h6 style="font-weight: bolder; margin-top: 6%;">ระยะห่าง <%= object[i].distance %> เมตร</h6></span></a><br>
+              <!-- <h5 id = "post_distance" class="card-title pricing-card-title" style="font-weight: lighter; margin-bottom: 5%;">ระยะห่าง <%= object[i].distance %> เมตร</h5> -->
               <hr>
 
             </div>
@@ -47,6 +49,49 @@
         </div>
       </div>
       </div>
+  
+      <div class="container">
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 box-shadow">
+            <div class="card-header" style="background-color: #064635;">
+              <h5 class="my-0 font-weight-normal" style="color: white;">กราฟแสดงระยะทางจากสถานที่ที่เลือกกับพนักงานรักษาความปลอดภัยในบริเวณใกล้เคียง(เมตร)</h5>
+            </div>
+            <div class="card-body" style="background-color: rgba(183, 246, 204, 0.25);">
+              <canvas id="myChart" width="500" height="500" style="margin: 0 auto;">a</canvas>
+              <p hidden id="number" style="visibility: hidden;"><%= number %></p>
+              <p hidden id="distance" style="visibility: hidden;"><%= distance %></p>
+              <p hidden id="idlist" style="visibility: hidden;"><%= id %></p>
+              <script>
+        
+                
+                let myChart = document.getElementById('myChart').getContext('2d'); 
+
+                var labeldata = [];
+                var d = document.getElementById('distance').innerHTML;
+                var idlist = document.getElementById('idlist').innerHTML;
+                var number = document.getElementById('number').innerHTML;
+
+                let text = d;
+                let text2 = idlist;
+                const myArray = text.split(",");
+                const myArray2 = text2.split(",");
+
+                for (let i = 0; i < parseInt(number); i++){
+                  let text = "ป้อมหมายเลข " + myArray2[i];
+                  labeldata.push(text);
+                }
+                
+                let massPopChart = new Chart(myChart, { type: 'bar', data:{ labels:labeldata, datasets:[{label:'ระยะทางโดยเฉลี่ย', data:myArray, backgroundColor: "DarkSeaGreen", hoverBackgroundColor: 'DarkOliveGreen'}],}
+                ,options: {
+                  responsive: false,
+                  scales: {yAxes: [{ticks: {beginAtZero: true}}]}
+                  }
+                })
+              </script>
+            </div>
+          </div>
+        </div>
+        </div>
     <form action="/" method="get">
     <button type="submit" class="btn btn-danger" style="width: 50%; margin-left: 25%; margin-bottom: 5%">กลับหน้าหลัก</button>
     </form>

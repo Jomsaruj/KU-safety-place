@@ -20,17 +20,17 @@
   </head>
   <body>
 
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4" style="margin-top: 3%; font-weight: lighter;">ค่าเฉลี่ยความสว่าง</h1>
-      <h3 style="margin-top: 2%;"><%= location %></h3>
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" style="background-color: rgba(41, 182, 109, 0.8); margin-bottom: 2%;">
+      <h1 class="display-4" style="margin-top: 1%; color: white; font-weight: bold;">ค่าเฉลี่ยความสว่าง</h1>
+      <h3 style="margin-top: 2%; color: white; font-weight: lighter;"><%= location %></h3>
     </div>
     <div class="container">
       <div class="card-deck mb-3 text-center">
         <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h5 class="my-0 font-weight-normal" style="font-weight: lighter;">ค่าเฉลี่ย ณ เวลาล่าสุด <%= time %> </h5>
+          <div class="card-header" style="background-color: #064635;">
+            <h5 class="my-0 font-weight-normal" style="font-weight: lighter; color: white;">ค่าเฉลี่ย ณ เวลาล่าสุด <%= time %> </h5>
           </div>
-          <div class="card-body">
+          <div class="card-body" style="background-color: rgba(183, 246, 204, 0.25);">
             <h1 class="card-title pricing-card-title" style="font-weight: lighter;"><%= current %>%</h1>
             <% if (parseFloat(current) >= 70){ %>
               <img src="image/bright.png" width="450" height="150" style="margin-bottom: 2%; margin-top: 1%" >
@@ -49,10 +49,10 @@
       <div class="container">
         <div class="card-deck mb-3 text-center">
           <div class="card mb-4 box-shadow">
-            <div class="card-header">
-              <h5 class="my-0 font-weight-normal">กราฟแสดงค่าความสว่างย้อนหลัง 6 ชั่วโมง</h5>
+            <div class="card-header" style="background-color: #064635;">
+              <h5 class="my-0 font-weight-normal" style="color: white;">กราฟแสดงค่าความสว่างย้อนหลัง 6 ชั่วโมง</h5>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="background-color: rgba(183, 246, 204, 0.25);">
               <canvas id="myChart" width="500" height="500" style="margin: 0 auto;">a</canvas>
               <p hidden id="cur" style="visibility: hidden;"><%= current %></p>
               <p hidden id="one" style="visibility: hidden;"><%= one %></p>

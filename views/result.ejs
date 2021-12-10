@@ -20,23 +20,23 @@
   </head>
   <body>
 
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4" style="margin-top: 3%; font-weight: lighter;">ค่าเฉลี่ยฝุ่นละออง PM2.5</h1>
-      <h3 style="margin-top: 2%;"><%= location %></h3>
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" style="background-color: rgba(41, 182, 109, 0.8); margin-bottom: 2%;">
+      <h1 class="display-4" style="margin-top: 1%; font-weight: bold; color: white;">ค่าเฉลี่ยฝุ่นละออง PM2.5</h1>
+      <h3 style="margin-top: 2%; color: white; font-weight: lighter;"><%= location %></h3>
     </div>
     <div class="container">
       <div class="card-deck mb-3 text-center">
         <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h5 class="my-0 font-weight-normal" style="font-weight: lighter;">ค่าเฉลี่ย ณ วันที่ <%= time %> </h5>
+          <div class="card-header" style="background-color: #064635;">
+            <h5 class="my-0 font-weight-normal" style="font-weight: lighter;color: white;">ค่าเฉลี่ย ณ วันที่ <%= time %> </h5>
           </div>
-          <div class="card-body">
+          <div class="card-body" style="background-color: rgba(183, 246, 204, 0.25);">
             <h1 class="card-title pricing-card-title" style="font-weight: lighter;"><%= amount %></h1>
             <% if (parseFloat(amount) >= 80){ %>
-              <img src="image/bad.jpg" width="150" height="150" style="margin-bottom: 2%; margin-top: 1%" >
+              <img src="image/bad.png" width="150" height="150" style="margin-bottom: 2%; margin-top: 1%" >
               <h4 style="font-weight: lighter; margin-top: 1%;">ไม่ปลอดภัย ควรหลีกเลี่ยง</h4>
             <% } else if (parseFloat(amount) < 80 && parseFloat(amount) > 50){ %>
-              <img src="image/ok.jpg" width="150" height="150" style="margin-bottom: 2%; margin-top: 1%" >
+              <img src="image/ok.png" width="150" height="150" style="margin-bottom: 2%; margin-top: 1%" >
               <h4 style="font-weight: lighter; margin-top: 1%;">ปานกลาง-ค่อนข้างมาก ควรสวมใส่หน้ากากอนามัย</h4>
             <% } else { %>
               <img src="image/good.png" width="150" height="150" style="margin-bottom: 2%; margin-top: 1%" >
@@ -49,10 +49,10 @@
       <div class="container">
         <div class="card-deck mb-3 text-center">
           <div class="card mb-4 box-shadow">
-            <div class="card-header">
-              <h5 class="my-0 font-weight-normal">กราฟแสดงปริมาณฝุ่นละออง PM2.5 ย้อนหลัง 3 วัน</h5>
+            <div class="card-header" style="background-color: #064635;">
+              <h5 class="my-0 font-weight-normal" style="color: white;">กราฟแสดงปริมาณฝุ่นละออง PM2.5 ย้อนหลัง 3 วัน</h5>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="background-color: rgba(183, 246, 204, 0.25);">
               <canvas id="myChart" width="500" height="500" style="margin: 0 auto;">a</canvas>
               <p hidden id="teight" style="visibility: hidden;"><%= amount %></p>
               <p hidden id="tseven" style="visibility: hidden;"><%= seven %></p>
@@ -62,7 +62,7 @@
                 let pmDay27 = document.getElementById('tseven').innerHTML;
                 let pmDay28 = document.getElementById('teight').innerHTML;
                 let myChart = document.getElementById('myChart').getContext('2d'); 
-                let massPopChart = new Chart(myChart, { type: 'bar', data:{ labels:["26/11/64", "27/11/64", "28/11/64"], datasets:[{ label:'ค่าเฉลี่ยปริมาณฝุ่นละออง PM 2.5', data:[parseFloat(pmDay26),parseFloat(pmDay27),parseFloat(pmDay28)]}],}
+                let massPopChart = new Chart(myChart, { type: 'bar', data:{ labels:["26/11/64", "27/11/64", "28/11/64"], datasets:[{ label:'ค่าเฉลี่ยปริมาณฝุ่นละออง PM 2.5', data:[parseFloat(pmDay26),parseFloat(pmDay27),parseFloat(pmDay28)],backgroundColor: "DarkSeaGreen", hoverBackgroundColor: 'DarkOliveGreen'}],}
                 ,options: {
                   responsive: false
                   }

@@ -65,7 +65,13 @@ app.post("/", function(req,res){
                     if (securityData.length > 0){
                         const number = securityData.length
                         const building = securityData[0].building
-                        res.render('result_security', {location: building, current: 1, one: 1, two: 1, three: 1, four: 1, five: 1, number: number, object: securityData})
+                        var data = []
+                        var data2 = []
+                        for (let i = 0; i < parseInt(number); i++){
+                            data.push(securityData[i].distance)
+                            data2.push(securityData[i].security_id)
+                        }
+                        res.render('result_security', {id: data2, distance: data, location: building, number: number, object: securityData})
                     }
                     else{
                         res.render('no_data')
