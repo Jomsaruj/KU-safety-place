@@ -44,6 +44,7 @@ The development process of this application is consistent with 4 main parts. Whi
 
 ## Database schemas
 
+<img width="600" alt="8" src="https://user-images.githubusercontent.com/59832457/145678051-bc0f1675-19a5-46db-94dd-f3ba70463992.png">
 
 
 
