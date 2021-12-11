@@ -1,6 +1,7 @@
 # KU-safety-place
 
-Visit our web application at: https://cryptic-plains-93811.herokuapp.com
+* Visit our web application at: https://cryptic-plains-93811.herokuapp.com
+* Visit our API swagger tool at: https://kuplace.herokuapp.com/ku-place/ui/
 
 A web application that aims to help students who have to travel in Kasetsart University at night to find the safest route to their destination by providing some useful information such as, the amount of light in a particular area(measure with light sensor), the number of security guards in the area, and the amount of PM2.5 in the area.
 
@@ -105,8 +106,28 @@ However, in order to run our application locally
   ```
   http://localhost:8080/ku-place/ui
   ```
-
+### 2. Run KU-safety-place web application
   
+2.0) Navigate to KU-safety-place directory
+  
+  ```
+  cd KU-safety-place
+  ```
+2.1) Run the application
+  
+  ```
+  node app.js
+  ```
+  
+## Team members
+  1. Auttakrit  Wongsarawit	  6210546455
+  2. Saruj  Sattayanurak	      6210545700
+  3. Setthanat  Kladee        6210546021
+  
+## Project presentation and slide
+
+  - [Presentation Slide]( https://docs.google.com/presentation/d/1y-V6GbWopheRIy6sRsC7chnM_kh7ib3XjgsGeibGwF0/edit?usp=sharing)
+  - [Presentation Video]()
 
 
 
