@@ -49,7 +49,7 @@ The development process of this application is consistent with 4 main parts. Whi
 
 ## Database schemas
   
-Our web application is consists of 4 main schemas. Which are kuPlace that use to store the building name and latitude/longitude of each building, kuLight that use to store the amount of light at its timestamp in a particular area, PM that use to store the amount of PM2.5 in a particular area, and kusecurity that is used to store images link of the security post and its latitude/longitude. 
+Our web application is consists of 4 main schemas. Which are kuPlace that use to store the building name and latitude/longitude of each building, kuLight that use to store the amount of light at its timestamp in a particular area, PM that use to store the amount of PM2.5 in a particular area, and kuSecurity that is used to store images link of the security post and its latitude/longitude. 
 
 <img width="600" alt="8" src="https://user-images.githubusercontent.com/59832457/145678051-bc0f1675-19a5-46db-94dd-f3ba70463992.png">
   
