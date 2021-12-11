@@ -105,6 +105,18 @@ However, in order to run our application locally
   ```
   http://localhost:8080/ku-place/ui
   ```
+### 2. Run KU-safety-place web application
+  
+2.0) Navigate to KU-safety-place directory
+  
+  ```
+  cd KU-safety-place
+  ```
+2.1) Run the application
+  
+  ```
+  node app.js
+  ```
 
   
 
