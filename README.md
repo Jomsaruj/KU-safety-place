@@ -31,7 +31,7 @@ The development process of this application is consistent with 4 main parts. Whi
 * Data sharing
 * Data visualization
 
-<img width="600" alt="1" src="https://user-images.githubusercontent.com/59832457/145676568-8d56decf-c553-4d7c-a140-907ba738b17e.png">
+<img width="600" alt="1" src="https://user-images.githubusercontent.com/59832457/145676720-e37bfc8f-d73f-41c0-83c7-94d12542f1a5.png">
 
 
 
