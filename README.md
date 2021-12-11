@@ -63,6 +63,47 @@ For those who want to run our application locally. Here are some requirements
 2. Requirements for KU-safety-place application
   * Node JS 16.13.0 or later
 
+## Running instruction
+  
+Keep in mind that you can visit our deployed web application by the following links
+  * Visit our web application at: https://cryptic-plains-93811.herokuapp.com
+  * Visit our API swagger tool at: https://kuplace.herokuapp.com/ku-place/ui/
+  
+However, in order to run our application locally
+  
+### 1. Run API swagger tool
+  
+
+1.1) Connect to the database
+  ```
+  create file config.py(see example in config.py.example)
+  ```
+1.2) Set the virtualm environment
+  ```
+  python -m venv env
+  ```
+1.3) Activate the environment
+  ```
+  env\Scripts\activate.bat
+  ```
+1.4) Execute the jar file (include in the repository)
+  ```
+  java -jar openapi-generator-cli-5.3.0.jar generate -i openapi/ku-place-api.yaml -o autogen -g python-flask
+  ```
+1.5) Install the requirements
+  ```
+  pip install -r requirements.txt
+  ```
+1.6) Run the app.py file
+  ```
+  python app.py
+  ```
+1.7) Visit our open api at
+  ```
+  http://localhost:8080/ku-place/ui
+  ```
+
+  
 
 
 
