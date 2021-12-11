@@ -117,6 +117,10 @@ However, in order to run our application locally
   ```
   node app.js
   ```
+  
+## Team members
+  
+## Project presentation and slide
 
   
 
