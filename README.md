@@ -42,6 +42,8 @@ The development process of this application is consistent with 4 main parts. Whi
 3. User can select a location and be able to see the amount of PM2.5 in the area.
 <img width="600" alt="2" src="https://user-images.githubusercontent.com/59832457/145677057-026db88a-a69f-4f4a-8f79-48e636b66951.png">
 
+## Database schemas
+
 
 
 
