@@ -11,11 +11,11 @@ This application is a part of Data Acquisition and Integration 01219334 course a
 
 * [Project overview](#project-overview)
 * [Features](#features)
-* Database Schemas 
-* Required libraries and tools
-* Instruction to run our web app locally
-* Team members
-* Project presentation and slide
+* [Database Schemas](#database-schemas) 
+* [Required libraries and tools](#requirements)
+* [Instruction to run our web app locally](#running-instruction)
+* [Team members](#team-members)
+* [Project presentation and slide](#project-presentation-and-slide)
 
 ## Project overview
 
