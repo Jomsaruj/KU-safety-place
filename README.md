@@ -120,9 +120,11 @@ However, in order to run our application locally
   ```
   
 ## Team members
-  1. Auttakrit  Wongsarawit	  6210546455
-  2. Saruj  Sattayanurak	      6210545700
-  3. Setthanat  Kladee        6210546021
+  |Name| Student ID|
+  |--|--|
+  |[Auttakrit  Wongsarawit](https://github.com/markna551) |                  6210546455|
+  |[Saruj  Sattayanurak](https://github.com/Jomsaruj)|	                      6210545700|
+  |[Setthanat  Kladee](https://github.com/Ing140943)|                        6210546021|
   
 ## Project presentation and slide
 
