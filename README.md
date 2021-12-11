@@ -120,10 +120,14 @@ However, in order to run our application locally
   ```
   
 ## Team members
+  1. Auttakrit  Wongsarawit	  6210546455
+  2. Saruj  Sattayanurak	      6210545700
+  3. Setthanat  Kladee        6210546021
   
 ## Project presentation and slide
 
-  
+  - [Presentation Slide]( https://docs.google.com/presentation/d/1y-V6GbWopheRIy6sRsC7chnM_kh7ib3XjgsGeibGwF0/edit?usp=sharing)
+  - [Presentation Video]()
 
 
 
