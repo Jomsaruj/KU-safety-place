@@ -33,7 +33,7 @@ The development process of this application is consistent with 4 main parts. Whi
 
 <img width="600" alt="1" src="https://user-images.githubusercontent.com/59832457/145676720-e37bfc8f-d73f-41c0-83c7-94d12542f1a5.png">
 
-### Features
+## Features
 
 1. User can select a location and be able to see the amount of light in the area.
 <img width="600" alt="4" src="https://user-images.githubusercontent.com/59832457/145677132-75b8ff26-6696-420d-a469-98144cc8de3e.png">
