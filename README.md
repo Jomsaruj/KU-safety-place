@@ -129,7 +129,7 @@ However, in order to run our application locally
 ## Project presentation and slide
 
   - [Presentation Slide]( https://docs.google.com/presentation/d/1y-V6GbWopheRIy6sRsC7chnM_kh7ib3XjgsGeibGwF0/edit?usp=sharing)
-  - [Presentation Video]()
+  - [Presentation Video](https://www.youtube.com/watch?v=aWjcRsczGL0)
 
 
 
