@@ -9,8 +9,8 @@ This application is a part of Data Acquisition and Integration 01219334 course a
 
 ## Table of contents
 
-* Project overview
-* Features
+* [Project overview](#project-overview)
+* [Features](#features)
 * Database Schemas 
 * Required libraries and tools
 * Instruction to run our web app locally
