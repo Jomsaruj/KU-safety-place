@@ -73,7 +73,7 @@ However, in order to run our application locally
   
 ### 1. Run API swagger tool
   
-1.0) Nevigate to the API folder
+1.0) Nevigate to the API directory
   ```
   cd KU-safety-place/API
   ```
