@@ -73,7 +73,10 @@ However, in order to run our application locally
   
 ### 1. Run API swagger tool
   
-
+1.0) Nevigate to the API folder
+  ```
+  cd KU-safety-place/API
+  ```
 1.1) Connect to the database
   ```
   create file config.py(see example in config.py.example)
