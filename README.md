@@ -26,12 +26,12 @@ Since there are many students who have to travel in the university at night. KU 
 
 The development process of this application is consistent with 4 main parts. Which are
 
-* Data collection
+* Data acquisition
 * Data integration
 * Data sharing
 * Data visualization
 
-<img width="500" alt="1" src="https://user-images.githubusercontent.com/59832457/145676176-3cf99957-6ba1-46a3-94b0-f0f4564b6875.png">
+<img width="600" alt="1" src="https://user-images.githubusercontent.com/59832457/145676176-3cf99957-6ba1-46a3-94b0-f0f4564b6875.png">
 
 
 
