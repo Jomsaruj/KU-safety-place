@@ -48,8 +48,20 @@ The development process of this application is consistent with 4 main parts. Whi
 <img width="600" alt="2" src="https://user-images.githubusercontent.com/59832457/145677057-026db88a-a69f-4f4a-8f79-48e636b66951.png">
 
 ## Database schemas
+  
+Our web application is consists of 4 schemas. Which are KUPlace that use to store the building name and latitude/longitude of each building, KULight that use to store the amount of light at its timestamp in a particular area, PM that use to store the amount of PM2.5 in a particular area, and KUsecurity that is used to store images link of the security post and its latitude/longitude. 
 
 <img width="600" alt="8" src="https://user-images.githubusercontent.com/59832457/145678051-bc0f1675-19a5-46db-94dd-f3ba70463992.png">
+  
+## Requirements
+  
+For those who want to run our application locally. Here are some requirements
+
+1. Requirements for Swagger tool
+  * Python 3.4 or later
+  * Java 1.8.0 or later
+2. Requirements for KU-safety-place application
+  * Node JS 16.13.0 or later
 
 
 
