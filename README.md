@@ -38,9 +38,11 @@ The development process of this application is consistent with 4 main parts. Whi
 1. User can select a location and be able to see the amount of light in the area.
 <p>
 <img width="600" alt="4" src="https://user-images.githubusercontent.com/59832457/145677132-75b8ff26-6696-420d-a469-98144cc8de3e.png">
+<p>
 2. User can select a location and be able to see distance between the location and each security post in the area
 <p>
 <img width="600" alt="3" src="https://user-images.githubusercontent.com/59832457/145677098-2bf90ab1-d267-48f9-bdb5-c8c5124a3f7d.png">
+<p>
 3. User can select a location and be able to see the amount of PM2.5 in the area.
 <p>
 <img width="600" alt="2" src="https://user-images.githubusercontent.com/59832457/145677057-026db88a-a69f-4f4a-8f79-48e636b66951.png">
